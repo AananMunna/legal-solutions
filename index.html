@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legal-Solutions</title>
 
+  <!-- favIcon -->
+   <link rel="shortcut icon" href="./images/business.png" type="image/x-icon">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +27,7 @@
         extend: {
           colors: {
             primary: '#B68C5A', // Custom Primary Color
+            secondary: '#707070', // Custom Primary Color
           },
           fontFamily: {
             primary: ['Poppins', 'sans-serif'], // Custom Font Family
@@ -36,8 +40,8 @@
 </head>
 <body class="font-primary">
   <header>
-    <nav class="container mx-auto px-5 lg:px-32">
-        <div class="navbar bg-base-100">
+    <nav class="container mx-auto px-2 lg:px-20 py-2">
+        <div class="navbar bg-base-100 p-0">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -89,7 +93,7 @@
                 </ul>
               </div>
               <a class="btn btn-ghost text-xl">
-                <img src="./images/logo2.png" alt="">
+                <img src="./images/logo2.png" alt="" class="w-20 sm:w-full">
               </a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -134,12 +138,255 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-primary text-white hover:text-primary hover:bg-transparent hover:border-primary">Free Consultation</a>
+              <a class="btn bg-primary text-white hover:text-primary hover:bg-transparent hover:border-primary ">Free Consultation</a>
             </div>
           </div>
     </nav>
   </header>
-  <main></main>
+  <main>
+      <section class="hero container mx-auto px-2 lg:px-20 pt-2">
+        <div
+          class="hero min-h-screen rounded-lg relative"
+          style="background-image: url(./images/banner.png); background-size: cover; background-position: center;">
+          
+          <!-- Black Background Overlay -->
+          <div class="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
+      
+          <div class="hero-content text-neutral-content text-center relative">
+            <div class="max-w-full">
+              <h1 class="mb-10 mx-auto text-5xl lg:text-7xl font-bold font-secondary">
+                We Provide Effective <br> Legal Solutions
+              </h1>
+              <p class="mb-10">
+                There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour..
+              </p>
+              <div class="flex justify-center items-center space-x-5">
+                <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs text-black" />
+                <button class="btn bg-primary border-primary text-white hover:text-primary hover:bg-transparent hover:border-primary">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="legal-practice-area container mx-auto px-2 lg:px-20 my-20">
+        <div class="text-center">
+            <h1 class="font-extrabold font-secondary text-4xl mb-5">The Legal Practice Area</h1>
+            <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="cardContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+            <div class="card bg-base-100 rounded-none mx-auto">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/business.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Business Law</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 rounded-none mx-auto border-t border-l border-r bg-gradient-to-b from-[#F3F3F3] to-white">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/criminal.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Criminal Law</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100  rounded-none mx-auto">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/child.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Child Support</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 rounded-none mx-auto border-t">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/education.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Education Law</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 rounded-none mx-auto border-t border-l border-r">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/divorce.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Divorce Law</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 rounded-none mx-auto border-t ">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/tax.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-secondary font-bold text-2xl">Tax Law</h2>
+                  <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <button class="btn bg-primary rounded-full text-white hover:border-primary hover:text-primary hover:bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <section class="carouselArea container mx-auto px-2 lg:px-20 my-20">
+        <div class="text-center mb-10">
+            <h1 class="font-extrabold font-secondary text-4xl mb-5">What Our Client Say</h1>
+            <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="carousel w-full rounded-md">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                  </div>
+                  <h1 class="text-2xl font-secondary font-bold mb-4">Nazreen</h1>
+                  <p class="mb-6">UI/UX Designer</p>
+                  <p class="w-3/4 mx-auto">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="https://img.daisyui.com/images/stock/photo-1522071820081-009f0129c71c.webp" />
+                    </div>
+                  </div>
+                  <h1 class="text-2xl font-secondary font-bold mb-4">Yahya</h1>
+                  <p class="mb-6">Web Developer</p>
+                  <p class="w-3/4 mx-auto">
+                    Passionate about creating intuitive and dynamic user experiences. Over 3 years of experience in front-end development.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          
+            <!-- Slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="https://img.daisyui.com/images/stock/photo-1595152772835-219674b2a8a3.webp" />
+                    </div>
+                  </div>
+                  <h1 class="text-2xl font-secondary font-bold mb-4">Maria</h1>
+                  <p class="mb-6">Project Manager</p>
+                  <p class="w-3/4 mx-auto">
+                    Skilled in managing cross-functional teams to deliver successful projects on time and within budget.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          
+            <!-- Slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="https://img.daisyui.com/images/stock/photo-1564564295391-7f24f26f568b.webp" />
+                    </div>
+                  </div>
+                  <h1 class="text-2xl font-secondary font-bold mb-4">Alex</h1>
+                  <p class="mb-6">Data Scientist</p>
+                  <p class="w-3/4 mx-auto">
+                    Expert in data analytics, machine learning, and building AI-driven solutions for enterprise-level applications.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          
+          
+      </section>
+      
+  </main>
   <footer></footer>
 </body>
 </html>
